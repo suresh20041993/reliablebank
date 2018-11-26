@@ -1,0 +1,150 @@
+<!-- <div *ngIf="isLoginError" class="red-text center error-message">
+  <i class="material-icons">error</i> Incorrect username or password
+</div>
+<form #loginForm="ngForm" class="col s12 white" (ngSubmit)="OnSubmit(UserName.value,Password.value)">
+ <div class="row">
+   <div class="input-field col s12">
+     <i class="material-icons prefix">account_circle</i>
+     <input type="text" #UserName ngModel name="UserName" placeholder="Username" required>
+   </div>
+ </div>
+ <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">vpn_key</i>
+      <input type="password" #Password ngModel name="Password" placeholder="Password" required>
+    </div>
+  </div>
+  <div class="row">
+      <div class="input-field col s12">
+        <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
+      </div>
+    </div>
+</form> -->
+<!-- 
+<div *ngIf="isLoginError" class="red-text center error-message">
+  <i class="material-icons">error</i> Incorrect username or password
+</div>
+
+<form #loginForm="ngForm" class="col s12 white" (ngSubmit)="OnSubmit(UserName.value,Password.value)" >
+  <div class="row">
+    <div class="input-field col s12">
+      <i class="material-icons prefix">account_circle</i>
+      <input type="text" #UserName ngModel name="UserName" placeholder="Username" required>
+    </div>
+  </div>
+  <div class="row">
+     <div class="input-field col s12">
+       <i class="material-icons prefix">vpn_key</i>
+       <input type="password" #Password ngModel name="Password" placeholder="Password" required>
+     </div>
+   </div>
+   <div class="row">
+       <div class="input-field col s12">
+         <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
+       </div>
+     </div>
+</form> -->
+
+<section class="login-block">
+
+  <div class="container">
+
+<div class="row">
+  <div class="col-md-4 login-sec">
+      <h2 class="text-center">Login Now</h2>
+      <form class="login-form" #loginForm="ngForm" class="col s12 white" (ngSubmit)="OnSubmit(UserName.value,Password.value)">
+<div class="form-group">
+  <label for="exampleInputEmail1" class="text-uppercase">Username</label>
+  <!-- <input type="text" class="form-control" placeholder=""> -->
+  <input type="text" class="form-control"#UserName ngModel name="UserName" placeholder="Username" required>
+</div>
+<div class="form-group">
+  <label for="exampleInputPassword1" class="text-uppercase">Password</label>
+  <!-- <input type="password" class="form-control" placeholder=""> -->
+  <input type="password" class="form-control" #Password ngModel name="Password" placeholder="Password" required>
+</div>
+
+
+  <div class="form-check">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input">
+    <small>Remember Me</small>
+  </label>
+  <button [disabled]="!loginForm.valid"  type="submit" class="btn btn-login float-right">Submit</button>
+</div>
+
+</form>
+<div class="copy-text">Created with <i class="fa fa-heart"></i> by <a href="http://grafreez.com">SureshDev</a></div>
+  </div>
+  <div class="col-md-8 banner-sec">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+          <div class="carousel-inner" role="listbox">
+  <div class="carousel-item active">
+    <img class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="First slide">
+    <div class="carousel-caption d-none d-md-block">
+      <div class="banner-text">
+          <h2>This is AnyBank Pro</h2>
+          <p>ABCAPS or Customer Acquisition and Profiling System provides Fintech Companies and Financial Institutions an automated workflow to manage acquire prospects, evaluate their credit worthiness using profiling tools and covert them to customer.</p>
+      </div>	
+</div>
+  </div>
+  <div class="carousel-item">
+    <img class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="First slide">
+    <div class="carousel-caption d-none d-md-block">
+      <div class="banner-text">
+          <h2>This is AB-BPM</h2>
+          <p>ABCAPS or Customer Acquisition and Profiling System provides Fintech Companies and Financial Institutions an automated workflow to manage acquire prospects, evaluate their credit worthiness using profiling tools and covert them to customer.</p>
+      </div>	
+  </div>
+  </div>
+  <div class="carousel-item">
+    <img class="d-block img-fluid" src="https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg" alt="First slide">
+    <div class="carousel-caption d-none d-md-block">
+      <div class="banner-text">
+          <h2>This is AB-COLE </h2>
+          <p>ABCAPS or Customer Acquisition and Profiling System provides Fintech Companies and Financial Institutions an automated workflow to manage acquire prospects, evaluate their credit worthiness using profiling tools and covert them to customer.</p>
+      </div>	
+  </div>
+</div>
+          </div>	   
+      
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- 
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">RELIABLE BANK</h5>
+        <p class="grey-text text-lighten-4">SECURE AND TRUST</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2014 Suresh M
+    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer> -->
